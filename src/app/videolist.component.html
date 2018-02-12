@@ -1,0 +1,17 @@
+<b>video list component</b>
+<br>
+Videos: {{videos.length}}
+<br>
+<table class="table"> 
+  <thead> 
+    <tr> 
+      <th>ID</th> 
+      <th>Title</th> 
+    </tr> 
+  </thead> 
+  <tbody> 
+    <tr *ngFor="let v of videos" (click)="onSelect(v)"> 
+      <td>{{v.id}}</td> <td>{{v.title}}</td> 
+    </tr> 
+  </tbody> 
+</table>
